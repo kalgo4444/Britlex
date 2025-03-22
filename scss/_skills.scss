@@ -1,0 +1,85 @@
+.skills{
+    display: none;
+    &__title{
+        margin-top: 104px;
+        margin-bottom: 96px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 48px;
+    }
+    &__wrapper{
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+    &__card1{
+        background: $card-color;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        &__img{
+            padding: 35px 22px;
+        }
+        &__desc{
+            padding: 0 45px 100px;
+        }
+        &__title{
+            color: $main-color;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        &__text{
+            margin-top: 10px;
+            color: $second-color;
+        }
+        &__btn{
+            margin-top: 53px;
+            background: $main-color;
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 17px 64px;
+            border-radius: 10px;
+            transition: .25s ease;
+            &:hover{
+                background: $card-color;
+                outline: 2px solid $main-color;
+                color: $main-color;
+            }
+        }
+    }
+    &__card2{
+        background: $card-color;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        height: 434px;
+        &__img{
+            padding: 35px 22px;
+        }
+        &__desc{
+            padding: 0 45px 0;
+        }
+        &__title{
+            color: $main-color;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        &__btn{
+            margin-top: 53px;
+            background: $main-color;
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 17px 64px;
+            border-radius: 10px;
+            transition: .25s ease;
+            &:hover{
+                background: $card-color;
+                outline: 2px solid $main-color;
+                color: $main-color;
+            }
+        }
+    }
+}
