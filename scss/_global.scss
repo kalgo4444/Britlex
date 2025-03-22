@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Poppins;
+    src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+button, input, select, textarea{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.container{
+    max-width: 1380px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.top{
+    width: 40px;
+    height: 40px;
+    background: $main-color;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: .3s;
+    box-shadow: #000 0px 0px 10px;
+    display: grid;
+    place-items: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+.top.hidden{
+    bottom: -60px;
+    right: -60px;
+}
+body{
+    min-height: 500vh;
+}

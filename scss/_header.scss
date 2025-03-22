@@ -1,0 +1,137 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: .5s ease;
+    background: #FFFFFF;
+}
+.header.shrink{
+    box-shadow: 0 5px 5px #0001;
+    border-bottom: 1px solid $main-color;
+}
+.header.shrink .navbar{
+    height: 100px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    transition: .5s ease;
+    &__collaction{
+        display: flex;
+        gap: 40px;
+    }
+    &__link{
+        color: $main-color;
+        font-size: 20px;
+        font-weight: 500;
+        transition: .25s ease;
+        &:hover{
+            color: $second-color;
+        }
+    }
+    &__btn{
+        border: 2px solid $main-color;
+        font-size: 24px;
+        padding: 17px 57px;
+        border-radius: 5px;
+        transition: .25s ease;
+        &:hover{
+            background: $main-color;
+            color: #FFFFFF;
+        }
+    }
+    &__burger{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:990px) {
+    .navbar{
+        height: 120px;
+        &__collaction{
+            gap: 30px;
+        }
+        &__link{
+            font-size: 16px;
+        }
+        &__btn{
+            border: 2px solid $main-color;
+            font-size: 18px;
+            padding: 12px 40px;
+        }
+    }
+    .header.shrink .navbar{
+        height: 80px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .navbar{
+        height: 100px;
+        position: relative;
+        &__collaction{
+        position: fixed;
+        top: 0;
+        left: -80%;
+        width: 75%;
+        height: 100vh;
+        background: $main-color;
+        box-shadow: 10px 0px 20px #0009;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        transition: .25s ease;
+        &.showBurger{
+            left: 0;
+        }
+        }
+        &__link{
+            color: #FFFFFF;
+            line-height: 3;
+        }
+        &__btn{
+            display: none;
+        }
+        &__burger{
+            display: block;
+        }
+    }
+    .header.shrink .navbar{
+        height: 75px;
+    }
+}
+
+@media (max-width:575px) {
+    .container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .header.shrink .navbar{
+        height: 65px;
+    }
+}
+
+
+@media (max-width:350px) {
+
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header.shrink .navbar{
+        height: 60px;
+    }
+}
