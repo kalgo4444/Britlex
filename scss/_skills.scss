@@ -7,7 +7,6 @@
   }
   &__wrapper {
     margin-top: 96px;
-    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
@@ -401,3 +400,104 @@
   }
 }
 
+@media (max-width: 680px) {
+  .skills {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__card1 {
+      grid-column: auto;
+      grid-row: auto;
+      min-height: 535px;
+      &__img {
+        padding: 0;
+      }
+      &__btn {
+        margin-top: 65px;
+        width: 100%;
+        margin-bottom: 0px;
+      }
+    }
+    &__card2 {
+      grid-column: auto;
+      padding: 20px 0;
+      min-height: 535px;
+      &__title {
+        margin-top: 20px;
+      }
+      &__img {
+        padding: 0;
+      }
+      &__btn {
+        width: 100%;
+        margin-top: 150px;
+      }
+    }
+    &__card3 {
+      grid-column: auto;
+      min-height: 535px;
+      &__img {
+        padding: 0;
+      }
+      &__btn {
+        margin-top: 105px;
+        width: 100%;
+      }
+    }
+    &__card4 {
+      grid-column: auto;
+      display: flex;
+      flex-direction: column;
+      min-height: 535px;
+      &__img,
+      &__desc {
+        width: 100%;
+      }
+      &__desc {
+        padding-right: 15px;
+      }
+      &__img {
+        padding: 10px 0;
+      }
+      &__text {
+      }
+      &__btn {
+        margin-top: 100px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .skills {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    &__card1 {
+      padding-bottom: 30px;
+      &__text {
+        font-size: 16px;
+      }
+    }
+    &__card2 {
+      &__text {
+        font-size: 16px;
+      }
+    }
+    &__card3 {
+      &__text {
+        font-size: 16px;
+      }
+    }
+    &__card4 {
+      padding-bottom: 30px;
+      &__text {
+        font-size: 16px;
+      }
+    }
+  }
+}
