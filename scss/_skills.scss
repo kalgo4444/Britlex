@@ -242,6 +242,12 @@
 
 @media (max-width: 990px) {
   .skills {
+    &__title{
+      font-size: 36px;
+    }
+    &__wrapper{
+      margin-top: 53px;
+    }
     //card 1
     &__card1 {
       &__title {
@@ -320,6 +326,9 @@
 
 @media (max-width: 768px) {
   .skills {
+    &__wrapper{
+      margin-top: 37px;
+    }
     //card 1
     &__card1 {
       &__img {
@@ -402,6 +411,9 @@
 
 @media (max-width: 680px) {
   .skills {
+    &__title{
+      font-size: 32px;
+    }
     &__wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

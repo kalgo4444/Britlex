@@ -78,6 +78,9 @@
 
 @media (max-width: 990px) {
   .about {
+    &__wrapper{
+      margin-top: 135px;
+    }
     &__title2 {
       font-size: 36px;
     }
@@ -104,6 +107,9 @@
 
 @media (max-width: 768px) {
   .about {
+    &__wrapper{
+      margin-top: 88px;
+    }
     &__title2 {
       font-size: 30px;
     }
