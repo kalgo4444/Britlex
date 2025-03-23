@@ -154,7 +154,7 @@
         max-width: 510px;
         width: 100%;
         margin: 0 auto 25px;
-        font-size: 14px;
+        font-size: 16px;
       }
       &__rating__wrapper{
         margin: 0 auto;
@@ -177,6 +177,17 @@
         &__rating__wrapper{
             flex-direction: column;
             gap: 40px;
+        }
+        &__text{
+          font-size: 14px;
+        }
+        &__rating {
+          span:nth-child(1) {
+            font-size: 28px;
+          }
+          span:nth-child(2) {
+            font-size: 16px;
+          }
         }
     }
 }

@@ -59,7 +59,6 @@
     </header>
 
     <main>
-
       <!-- hero  -->
       <section class="hero" id="">
         <div class="container">
@@ -82,7 +81,8 @@
       <section class="skills" id="skills">
         <div class="container">
           <div class="skills__title">Skills</div>
-          <div class="skills__wrapper">
+          <div class="skills__wrapper" data-aos="fade-up"
+          data-aos-duration="200">
             <!-- card 1 speaking-->
              <div class="skills__card1">
               <div class="skills__card1__img">
@@ -131,7 +131,7 @@
 
       <!-- about us  -->
        <section class="about" id="aboutus" data-aos="fade-up"
-       data-aos-duration="300">
+       data-aos-duration="200">
         <h2 class="container">
           <div class="about__title1">About Us</div>
           <div class="about__wrapper">
@@ -161,11 +161,11 @@
        </section>
 
        <!-- pricing  -->
-        <section class="pricing" id="pricing" data-aos="fade-up"
-        data-aos-duration="300">
+        <section class="pricing" id="pricing">
           <div class="container">
             <div class="pricing__title">Pricing</div>
-            <div class="pricing__wrapper">
+            <div class="pricing__wrapper" data-aos="fade-up"
+            data-aos-duration="200">
               <!-- card 1 -->
               <div class="pricing__card">
                 <div class="pricing__img">
@@ -217,11 +217,42 @@
         </section>
 
         <!-- contact  -->
-         <section class="contact">
+         <section class="contact" id="contacts" data-aos="fade-up"
+         data-aos-duration="200">
           <div class="container">
-            <div class="contact__wrapper"></div>
+            <p class="contact__title1">Contact Us</p>
+            <div class="contact__wrapper">
+              <div class="contact__desc">
+                <p class="contact__title2">Contact Us</p>
+                <p class="contact__text">Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
+                <form action="">
+                <div class="contact__action">
+                  <input type="email" placeholder="Enter Your E-mail" required>
+                  <button type="submit">Subscribe</button>
+                </div>
+                <div class="contact__action2">
+                  <input type="email" placeholder="Enter Your E-mail" required>
+                  <button type="submit">Subscribe</button>
+                </div>
+              </form>
+              </div>
+              <div class="contact__img">
+                <img src="./assets/img/contact-us.svg" alt="">
+              </div>
+            </div>
           </div>
          </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <img src="./assets/img/Britlex.svg" alt="">
+          <p>Terms and Conditions • Privacy Policy • Cookie Policy</p>
+        </div>
+      </div>
+    </footer>
+
 
     <!-- buttun scrool up  -->
     <a href="#" class="top"><i class="fa-solid fa-up-long"></i></a>
